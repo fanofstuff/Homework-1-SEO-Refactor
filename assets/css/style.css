@@ -8,6 +8,7 @@ body {
     background-color: #d9dcd6;
 }
 
+/* header class altered to header element for next 6 sections */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,25 +16,31 @@ header {
     color: #ffffff;
 }
 
-h1 {
+/* partial structure path given to allow for later scaling */
+header > h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-abbr {
+/* seo class replaced with semantic abbr */
+header > h1 > abbr {
     color: #d9dcd6;
 }
 
-nav {
+/* div under .header replaced with nav */
+header > nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+}
+
+header > nav > ul {
     list-style-type: none;
 }
 
-li {
+header > nav > ul > li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -43,6 +50,7 @@ a {
     text-decoration: none;
 }
 
+/* hero class replaced with figure element */
 figure {
     height: 800px;
     width: 100%;
@@ -52,13 +60,15 @@ figure {
     background-position: center;
 }
 
+/* content class replaced with article element */
 article {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.services {
+/* search-engine-optimization, online-reputation-management, and social-media-marketing classes consolidated and replaced with services class */
+article > .services {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -67,33 +77,33 @@ article {
     color: #ffffff;
 }
 
-h2 {
+/* 3 class-specific h2s consolidated into h2 */
+article > section > h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/* general restructing of css to conform to html layout puts p element near its first appearance under article */
 p {
     font-size: 16px;
 }
 
-#search-img {
+/* consolidates 3 images under one class */
+article > section > .services-img {
     max-height: 200px;
+}
+
+.float-left {
+    float: left;
     margin-right: 25px;
-    float: left
 }
 
-#online-img {
-    max-height: 200px;
-    margin-left: 25px; 
-    float: right; 
+.float-right {
+    float: right;
+    margin-left: 25px;
 }
 
-#social-img {
-    max-height: 200px; 
-    margin-right: 25px;
-    float: left
-}
-
+/* benefits class replaced with main element */
 main {
     margin-right: 20px;
     padding: 20px;
@@ -103,24 +113,28 @@ main {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+}
+
+/* 3 benefit-related classes consolidated into benefit class */
+main > .benefit {
+    margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit {
-    margin-bottom: 32px;
-}
-
-h3 {
+/* 3 class-specific h3s consolidated into h3 */
+main > section > h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-img {
+/* 3 class-specific imgs consolidated into one new class */
+main > section > .benefit-img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+/* footer class simply changed into footer element */
 footer {
     padding: 30px;
     clear: both;
@@ -128,6 +142,7 @@ footer {
     text-align: center;
 }
 
-h4 {
+/* updated to reflect changes to footer class and element h2 */
+footer > h4 {
     font-size: 20px;
 }

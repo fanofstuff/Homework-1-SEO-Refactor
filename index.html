@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<!-- typical link to style.css; title is simply the company name (does a good job suggesting its function already) -->
+<!-- added typical link to style.css -->
+<!-- title is simply the company name (does a good job suggesting its content already) --> 
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -8,7 +9,9 @@
 </head>
 
 <body>
-    <!-- header used to indicate beginning of page; nav includes 3 links to later sections under <li>s; abbr chosen for wordplay (seo = Search Engine Optimization) -->
+    <!-- header used to indicate beginning of page -->
+    <!-- nav includes 3 links to later sections under <li>s -->
+    <!-- abbr chosen for wordplay (seo = Search Engine Optimization) -->
     <header>
         <h1>Hori<abbr>seo</abbr>n</h1>
         <nav>
@@ -25,33 +28,35 @@
             </ul>
         </nav>
     </header>
-    <!-- figure accomodates previous classes; semantically chosen for non-caption background image -->
+    <!-- figure semantically chosen for non-caption background image -->
+    <!-- unsure as to whether alt-text is necessary for this background image, but my best try at it was too flawed to include --> 
     <figure></figure>
-    <!-- article serves as primary discussion point, broken into 3 sub-sections; alternating float and margin properties necessitated multiple ids in place of singular "service-img" class for sections -->
+    <!-- article serves as primary discussion point, broken into 3 sub-sections -->
     <article>
         <section class="services">
-            <img src="./assets/images/search-engine-optimization.jpg" id="search-img" alt="Work desk with notebook, pens, and coffee"/>
+            <img src="./assets/images/search-engine-optimization.jpg" class="services-img float-left" alt="Work desk with notebook, pens, and coffee"/>
             <h2><a name="search-engine-optimization"></a>Search Engine Optimization</h2>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
             </p>
         </section>
         <section class="services">
-            <img src="./assets/images/online-reputation-management.jpg" id="online-img" alt="Man working on phone and computer; computer has rising 'Reputation' graph"/>
+            <img src="./assets/images/online-reputation-management.jpg" class="services-img float-right" alt="Man working on phone and computer; computer has rising 'Reputation' graph"/>
             <h2><a name="online-reputation-management"></a>Online Reputation Management</h2>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
         </section>
         <section class="services">
-            <img src="./assets/images/social-media-marketing.jpg" id="social-img" alt="Group of people discussing social media marketing"/>
+            <img src="./assets/images/social-media-marketing.jpg" class="services-img float-left" alt="Group of people discussing social media marketing"/>
             <h2><a name="social-media-marketing"></a>Social Media Marketing</h2>
             <p>
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
             </p>
         </section>
     </article>
-    <!-- originally chose <aside>, but determined that this was too closely related to main article for that element; lack of specific formatting allows for consolidation of various classes -->
+    <!-- originally chose <aside>, but main likely works better --> 
+    <!-- lack of specific formatting allows for consolidation of various classes --> 
     <main>
         <section class="benefit">
             <h3>Lead Generation</h3>
@@ -75,7 +80,9 @@
             </p>
         </section>
     </main>
-    <!-- unnecessary classes consolidated under footer element; footer chosen to close out page -->
+    <!-- unnecessary classes consolidated under footer element -->
+    <!-- footer chosen to close out page --> 
+    <!-- h2 replaced with h4 to further differentiate from article h2 -->
     <footer>
         <h4>Made with ❤️️ by Horiseon</h4>
         <p>
